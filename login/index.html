@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Login - Elias' Apps</title>
+        <link rel="icon" href="/favicon.ico" sizes="any"/>
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <link rel="stylesheet" href="style.css"/>
+
+        <script src="script.js"></script>
+        <script src="/common/login.js"></script>
+    </head>
+
+    <body>
+        <div id="form-wrapper">
+            <div id="form-tab-list">
+                <button id="login-tab" class="form-tab">Login</button>
+                <button id="register-tab" class="form-tab">Registrieren</button>
+            </div>
+
+            <div id="error"></div>
+
+            <form name="login">
+                <label for="name">Name:</label><br>
+                <input name="name" type="text" required><br>
+                <label for="password">Passwort:</label><br>
+                <input name="password" type="password" required><br>
+                <input type="submit" value="Login">
+            </form>
+    
+            <form name="register">
+                <label for="name">Name:</label><br>
+                <input name="name" type="text" required><br>
+                <label for="password">Passwort:</label><br>
+                <input name="password1" type="password" required><br>
+                <label for="password">Passwort wiederholen:</label><br>
+                <input name="password2" type="password" required><br>
+                <input type="submit" value="Registrieren">
+            </form>
+        </div>
+    </body>
+</html>
